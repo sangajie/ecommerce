@@ -1,866 +1,423 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-
-    <title>PT. Techno Executor Jaya</title>
-
-    <!-- Icon -->
-    <link href="assets/img-tej/logo/logobr.png" rel="icon">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    <!---->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @vite('resources/css/app.css') -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  
+  <!-- javascript -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="owlcarousel/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    body{
+      font-family: 'Roboto', sans-serif;
+      color: #272343;
+      background-color: #fffffe;
+    }
+    .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
     
-  </head>
+    .dropdown {
+      position: relative;
+      /* display: inline-block; */
+    }
+    
+    .dropdown-content {
+      display: none;
+      right: 0;
+      top: 0;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+</head>
 
 <body>
-
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          <img class="lucu" src="assets/img-tej/logo/logobr.png" alt="">
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-                          <li class=""><a href="index.html" class="active">Beranda</a></li>
-                          <li class="scroll-to-section"><a href="#about">Tentang</a></li>
-                          <li class="scroll-to-section"><a href="#team">Tim</a></li>
-                          <li class="scroll-to-section"><a href="#partners">Mitra</a></li> 
-                          <li class="scroll-to-section"><a href="#clients">Client</a></li> 
-                          <li><a href="news.html">Berita</a></li>
-                          <li><a href="services.html">Layanan</a></li>
-                          <!-- <li><a href="services.html">Layanan</a></li> -->
-                          <!-- <li class="has-sub flag">
-                            <a href="javascript:void(0)">Berita & Layanan
-                            </a>
-                            <ul class="sub-menu sub-menu-flag">
-                                <li>
-                                  <a href="news.html">Berita</a>
-                                  <a href="services.html">Layanan</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="has-sub flag">
-                            <a href="javascript:void(0)">
-                              <img
-                              src="https://flagcdn.com/w20/id.png"
-                              srcset="https://flagcdn.com/w40/id.png 2x"
-                              width="20"
-                              alt="Indonesia">
-                            </a>
-                            <ul class="sub-menu sub-menu-flag">
-                                <li>
-                                  <a href="index-eng.html">
-                                    <img
-                                    src="https://flagcdn.com/w20/us.png"
-                                    srcset="https://flagcdn.com/w40/us.png 2x"
-                                    width="20"
-                                    alt="United States">
-                                </a>
-                              </li>
-                            </ul>
-                          </li> -->
-                      </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <!-- ***** Main Banner Area Start ***** -->
-  <section class="main-banner" id="top">
-    <div class="owl-carousel owl-theme">
-
-      <div class="bg-image-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="header-text">
-                <h2>Solusi cepat untuk perusahaan anda</h2>
-                <div class="main-button-gradient">
-                  <div class="scroll-to-section"><a href="#contact-section">Ketahui lebih lanjut !</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image first">
-                <img src="assets/img-tej/logo/logobr.png" alt="">
-              </div>
+  
+  <div class="flex justify-center">
+    <div class="p-1 container">
+      <!-- Header 1 --> 
+      <section class="flex justify-between items-center py-4">
+        <a href="">
+          <img src="https://www.monotaro.id/media/logo/stores/1/Logo-MID-header.png" title="Logo MID header"
+          alt="Logo MID header" width="200">
+        </a>
+        <div class="flex justify-center">
+          <div class="xl:w-96">
+            <div class="input-group relative flex items-stretch w-full border-yellow-500 border-2 rounded rounded-full px-3 rounded">
+              <input type="search" class="form-control relative flex-auto min-w-0 block w-full py-1.5 text-base font-normal  text-gray-700 bg-white bg-clip-padding rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              placeholder="Ketik Merek / Nama / Tipe Produk" aria-label="Search" aria-describedby="button-addon2">
+              <span class="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded" id="basic-addon2">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                </svg>
+              </span>
             </div>
           </div>
+        </div>  
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex"><img src="assets/New folder/icon_review.png" class="mr-2 w-7" alt="">Review <br> Reminder</a>
         </div>
-      </div>
-
-      <div class="bg-image-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="header-text">
-                <h2>Pembuatan aplikasi Android dan Ios</h2>
-                <p>PT. TEJ menyediakan berbagai layanan untuk pengembangan literasi dan edukasi Indonesia.</p>
-                <div class="main-button-gradient">
-                  <div class="scroll-to-section"><a href="#contact-section">Ketahui lebih lanjut !</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image first">
-                <img src="assets/img-tej/backgound/5.jpg" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex"><img src="assets/New folder/icon-wishlist-re.png" class="mr-2 w-7" alt="">Pending <br> Quotation</a>
         </div>
-      </div>
-
-      <div class="bg-image-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="header-text">
-                <h2>Menyediakan pembuatan Website</h2>
-                <p>Menyediakan jasa pembuatan dan pengelolaan website untuk perseorangan, organisasi dan perusahaan.</p>
-                <div class="main-button-gradient">
-                  <div class="scroll-to-section"><a href="#contact-section">Ketahui lebih lanjut !</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image first">
-                <img src="assets/img-tej/backgound/6.jpg" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex items-center"><img src="assets/New folder/icon_shopping_cart_grey.svg" class="mr-2 w-7" alt="">Keranjang <br> Belanja</a>
         </div>
-      </div>
-
-      <div class="bg-image-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="header-text">
-                <h2>Solusi cepat hasil memuaskan</h2>
-                <p>Menyediakan solusi yang cepat dan cermat demi tercapainya hasil yang memuaskan.</p>
-                <div class="main-button-gradient">
-                  <div class="scroll-to-section"><a href="#contact-section">Ketahui lebih lanjut !</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image first">
-                <img src="assets/img-tej/backgound/7.jpg" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex items-center"><img src="assets/New folder/icon-wishlist-re.png" class="mr-2 w-7" alt="">Wishlist</a>
         </div>
-      </div>
-
-      <div class="bg-image-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="header-text">
-                <h2>Pemasangan dan konfigurasi Network</h2>
-                <p>Solusi untuk pemasangan dan konfigurasi jaringan pada perusahaan Anda.</p>
-                <div class="main-button-gradient">
-                  <div class="scroll-to-section"><a href="#contact-section">Ketahui lebih lanjut !</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image first">
-                <img src="assets/img-tej/backgound/8.jpg" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500">
+          <img src="assets/New folder/btn-whatsapp.png" alt="">
+          <a href="login.html" class="text-xs">Order via WA <br> 085717507944</a>
         </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- ***** Main Banner Area End ***** -->
-
-  <!-- ***** Carosel ***** -->
-
-
-  <section class="get-info pt-5" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="left-image">
-            <img src="assets/images/8401.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center">
-          <div class="section-heading">
-            <h4>Tentang <em>Kami</em></h4>
-            <p>Didirikan pada tahun 2019, PT. Techno Executor Jaya adalah sebuah perusahaan yang bergerak di bidang Teknologi Informasi dan Komunikasi, seperti pengembangan piranti lunak <i>(software)</i>, penyediaan piranti keras <i>(hardware)</i>, instalasi dan konfigurasi jaringan <i>(network)</i>, pembuatan konten audio-visual, penyediaan jasa pemasaran digital untuk membantu Usaha Mikro, Kecil dan Menengah (UMKM), serta jasa konsultasi IT dengan pakar profesional yang berpengalaman.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="info-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+      </section>
+      <!-- Header End 1 -->
+      <!-- Header 2 -->
+      <section>
+        <div class="flex justify-between border-2 border-t border-l border-r border-gray-400 rounded-t-md">
+          <div class="w-2/3 relative text-sm">
+            <button onmouseover="bigImg(this.value)" value="tes" onmouseout="normalImg(this.value)" class="w-full h-full font-semibold py-1 hover:bg-yellow-300">Semua Kategori</button>
+            <div id="tes" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full flex z-10 absolute hidden" style="background-color: #fffffe">
+              <!-- <div class="w-full flex z-10 absolute"> -->
+                <div class="w-1/4 flex flex-col border-t border-b border-r border-gray-400 text-xs">
+                  <button onmouseover="bigImg(this.value)" value="bagian1" onmouseout="normalImg(this.value)" class="font-medium text-left w-full px-4 py-1 hover:bg-yellow-300">Kebutuhan Kantor</button>
+                  <button onmouseover="bigImg(this.value)" value="bagian2" onmouseout="normalImg(this.value)" class="font-medium text-left w-full px-4 py-1 hover:bg-yellow-300">Alat Kebutuhan & Kebersihan</button>
+                  <button onmouseover="bigImg(this.value)" value="bagian3" onmouseout="normalImg(this.value)" class="font-medium text-left w-full px-4 py-1 hover:bg-yellow-300">Alat AC & Pipa</button>
                 </div>
-                <h4>VISI</h4>
-                <p>Menjadi perusahaan yang <em>unggul</em>, <em>terkemuka </em>dan <em>jaya </em>dalam mengeksekusi seluruh pekerjaan di bidang Teknologi Informasi dan Komunikasi.</p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="info-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-                <h4>MISI</h4>
-                <p>1. Memberikan solusi terbaik.</p>
-                <p>2. Mengeksekusi pekerjaan dengan sempurna.</p>
-                <p>3. Bekerja efektif dan efisien.</p>
-                <p>4. Memajukan kehidupan masyarakat.</p>
-                <p>5. Menjalalin & membangun sinergi kerjasama.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-us our-office pt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-info">
-            <div class="section-heading">
-              <img src="assets/img-tej/logo/logobr.png" alt="">
-            </div>
-            <p></p>
-            <ul>
-              <li><strong>Akta Pendirian Perusahaan</strong><br>
-                <a href="#">AHU-0033106.AH.01.01.2019</a></li>
-
-              <li><strong>Nomor Induk Berusaha (NIB)</strong><br>
-              <a href="#">9120109721722</a></li>
-              
-              <li><strong>Nomor Pokok Wajib Pajak (NPWP)</strong><br>
-              <a href="#">92.122.804.5-435.000</a></li>
-              
-              <li><strong>Alamat</strong><br>
-              <a href="#">Ruko Usaha Baru No. 11K<br>
-                Jl. Bumi Sani Permai, RT001/RW011<br>
-                Kec. Setiamekar, Kel. Tambun Selatan<br>
-                Kab. Bekasi, Jawa Barat 17510</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div id="video">
-            <div class="thumb">
-              <img src="assets/images/video-thumb.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="services pt-5" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h4>Tim <em>Kami</em></h4>
-            <p>Tim kami terdiri dari sinergi kolaborasi antara para generasi muda berbakat dan inovatif <br> dengan para pakar profesional dengan pengalaman luas dan jam terbang yang tinggi.</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profile_Male.jpg" alt="">
-                </div>
-                <h4>Setrinola, S.Kom.</h4>
-                <p>KOMISARIS UTAMA</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profle_Female.jpg" alt="">
-                </div>
-                <h4>Hj. Hani Nurbani</h4>
-                <p>KOMISARIS</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profle_Female.jpg" alt="">
-                </div>
-                <h4>Devita Wulandari, S.Kom.</h4>
-                <p>KOMISARIS</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profle_YosiaWangsajaya-cr.png" alt="">
-                </div>
-                <h4>Yosia Wangsajaya, S.Kom.</h4>
-                <p>CEO & CO-FOUNDER</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profile_Male.jpg" alt="">
-                </div>
-                <h4>Ir. Slamet Abdul Rosid</h4>
-                <p>SOFTWARE ENGINEER</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/cutakcr.png" alt="">
-                </div>
-                <h4>Muhamad Hafidz Arif</h4>
-                <p>COO & NETWORK SPECIALIST</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profile_RobbyBaga-cr.png" alt="">
-                </div>
-                <h4>Robby Baga</h4>
-                <p>NETWORK SPECIALIST</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profile_IlhamFauzan-cr.png" alt="">
-                </div>
-                <h4>Ilham Fauzan</h4>
-                <p>IT & NETWORK SUPPORT</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/profile/Profile_Male.jpg" alt="">
-                </div>
-                <h4>Muhammad Aziz</h4>
-                <p>TECHNICAL SUPPORT</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="our-courses pt-5" id="courses">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h4>Layanan <em>Kami</em></h4>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="tabs">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="menu">
-                    <div class="active gradient-border"><span>Pembuatan Konten Audio-Visual</span></div>
-                    <div class="gradient-border"><span>Instalasi & Konfigurasi Jaringan</span></div>
-                    <div class="gradient-border"><span>Pengembangan Piranti Lunak</span></div>
-                    <div class="gradient-border"><span>Penyediaan Piranti Keras</span></div>
-                    <div class="gradient-border"><span>Jasa Pemasaran Digital</span></div>
-                    <div class="gradient-border"><span>Jasa Konsultasi IT</span></div>
+                <div class="w-3/4 flex relative border-r border-b border-t border-gray-400" style="height: 30vh;">
+                  <div id="bagian1" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full hidden h-full absolute px-5 flex">
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Produk Kantor</h4>
+                      <a href="#" class="hover:text-yellow-600">Kertas HVS</a>
+                      <a href="#" class="hover:text-yellow-600">Label</a>
+                      <a href="#" class="hover:text-yellow-600">Berkas</a>
+                      <a href="#" class="hover:text-yellow-600">Notes, Produk Kertas</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Alat Tulis</h4>
+                      <a href="#" class="hover:text-yellow-600">Pensil</a>
+                      <a href="#" class="hover:text-yellow-600">Rautan</a>
+                      <a href="#" class="hover:text-yellow-600">Penghapus</a>
+                      <a href="#" class="hover:text-yellow-600">Pensil Mekanik</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                  </div>
+                  <div id="bagian2" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full hidden h-full absolute px-5 flex">
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Alat Kebersihan</h4>
+                      <a href="#" class="hover:text-yellow-600">Sapu</a>
+                      <a href="#" class="hover:text-yellow-600">Set Sapu</a>
+                      <a href="#" class="hover:text-yellow-600">Pengki</a>
+                      <a href="#" class="hover:text-yellow-600">Sikat Rumah</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Deterjen</h4>
+                      <a href="#" class="hover:text-yellow-600">Sabun Mandi</a>
+                      <a href="#" class="hover:text-yellow-600">Deterjen Pabrik</a>
+                      <a href="#" class="hover:text-yellow-600">Pembersih Kaca</a>
+                      <a href="#" class="hover:text-yellow-600">Detergen Perumahan</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                  </div>
+                  <div id="bagian3" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full hidden h-full absolute px-5 flex">
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Penyejuk Udara, Ventilasi</h4>
+                      <a href="#" class="hover:text-yellow-600">Komponen AC</a>
+                      <a href="#" class="hover:text-yellow-600">Unit AC Industri</a>
+                      <a href="#" class="hover:text-yellow-600">Exhaust Fan</a>
+                      <a href="#" class="hover:text-yellow-600">PRoduk Terkait AC</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-9">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/4782.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Pembuatan Konten Audio-Visual</h4>
-                          <p>PT. Techno Executor Jaya juga bergerak di bidang pembuatan konten audio-visual. Untuk mengikuti perkembangan media yang sangat pesat, maka kami membuat sebuah platform bernama Technomedia yang berfokus di bidang media kreatif digital. Saat ini, kami telah membantu beberapa seniman dan konten kreator dalam pengembangan ide kreatif dan pembuatan karya mereka.</p>
-                          <div class="text-button">
-                            <a href="contact-us.html">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/6521.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Instalasi & Konfigurasi Jaringan</h4>
-                          <p>Perkembangan Internet telah memasuki era Internet of Things (IoT), dimana seluruh perangkat elektronik pastinya membutuhkan koneksi Internet dan jaringan untuk beroperasi. PT. Techno Executor Jaya siap untuk menyediakan infrastruktur jaringan untuk segala kebutuhan dan tempat. Kami menyediakannya secara lengkap, mulai dari perancangan arsitektur, instalasi, hingga konfigurasi jaringan.</p>
-                          <div class="text-button">
-                            <a href="contact-us.html">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/4393.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Pengembangan Piranti Lunak</h4>
-                          <p>PT. Techno Executor Jaya siap mengembangkan segala jenis piranti lunak (sistem aplikasi), mulai dari sistem aplikasi berbasis mobile, web, desktop, hingga sistem aplikasi berbasis cross-platform.</p>
-                          <div class="text-button">
-                            <a href="contact-us.html">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                        <img src="assets/images//6963.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Penyediaan Piranti Keras</h4>
-                          <p>Piranti keras adalah hal yang dibutuhkan oleh setiap perusahaan. PT. Techno Executor Jaya hadir untuk memenuhi kebutuhan piranti keras Anda. Kami memiliki segala jenis piranti keras, mulai dari perangkat Personal Computer (PC), perangkat server hingga perangkat jaringan.</p>
-                          <div class="text-button">
-                            <a href="contact-us.html">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/4782.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Jasa Pemasaran Digital</h4>
-                          <p>Pemasaran Digital <i>(Digital Marketing)</i> sangat dibutuhkan di era disrupsi teknologi saat ini, terutama untuk Usaha Mikro, Kecil dan Menengah (UMKM). PT. Techno Executor Jaya melalui Technomedia siap untuk memberikan jasa dan layanan pemasaran digital bagi Anda yang sedang merintis usaha. Kami dapat membantu Anda untuk memasarkan produk dan usaha yang Anda miliki, serta memberikan layanan konsultasi pemasaran digital dengan harga yang ramah dan terjangkau.</p>
-                          <div class="text-button">
-                            <a href="contact-us.html">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/4782.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Jasa Konsultan IT</h4>
-                          <p>Anda ingin berkonsultasi mengenai penerapan Teknologi Informasi untuk perusahaan dan bisnis Anda? PT. Techno Executor Jaya siap membantu Anda. Kami memiliki tim konsultan terdiri dari para pakar dan profesional di bidang Teknologi Informasi dengan pengalaman luas dan jam terbang yang tinggi. Tim konsultan kami siap membantu bisnis Anda meraih kesuksesan dan mencapai potensi tertinggi dengan mewujudkan penerapan Teknologi Informasi.</p>
-                          <div class="text-button">
-                            <a href="contact-us.html">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+              </div>
+            </div>
+            <div class="flex w-1/3 text-center items-center text-sm">
+              <div class="w-full">
+                <a class="border-l-2 border-gray-400 font-semibold w-full block text-center hover:text-yellow-600" href="">Semua Brand</a>
+              </div>
+              <div class="w-full">
+                <a class="border-l-2 border-gray-400 font-semibold w-full block text-center hover:text-yellow-600" href="">Semua Promo</a>
+              </div>
+              <div class="w-full bg-yellow-400 flex items-center h-full">
+                <a class="border-l-2 border-gray-400 font-semibold w-full block text-center" href="">Login</a>
+              </div>
+              <div class="w-full bg-yellow-400 flex items-center h-full">
+                <a class="border-l-2 border-gray-400 font-semibold w-full block text-center" href="">Daftar</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- 
-  <section class="services" id="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading" id="mitra">
-            <h4 class="mitra">Mitra <em>Kami</em></h4>
-          </div>
-          <div class="grid">
-            <div class="client-wrap">
-              <div class="client-in">
-                  <ul>
-                      <li>
-                          <img class="mabes" src="assets/img-tej/Logo_Partner/01_Mabes-Polri.jpg" alt="">
-                      </li>
-                      <li>
-                          <img class="tik" src="assets/img-tej/Logo_Partner/02_Div-TIK-Polri.jpg" alt="">
-                      </li>
-                      <li>
-                          <img class="telkom" src="assets/img-tej/partner/telkom.png" alt="">
-                      </li>
-                      <li>
-                          <img class="md" src="assets/img-tej/partner/mdmedia.png" alt="">
-                      </li>
-                      <li>
-                          <img class="media" src="assets/img-tej/partner/infomedia.png" alt="">
-                      </li>
-                      <li>
-                        <img class="maya" src="assets/img-tej/Logo_Partner/06_Aksaramaya.jpg" alt="">
-                      </li>
-                      <li>
-                          <img class="ssh" src="assets/img-tej/Logo_Partner/07_SSH.jpg" alt="">
-                      </li>
-                      <li>
-                          <img class="tsa" src="assets/img-tej/Logo_Partner/08_TSA.jpg" alt="">
-                      </li>
-                      <li>
-                          <img class="tip" src="assets/img-tej/Logo_Partner/10_TIP.jpg" alt="">
-                      </li>
-                      <li>
-                          <img class="unsia" src="assets/img-tej/Logo_Partner/09_UNSIA.jpg" alt="">
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="services pt-5" id="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h4>Mitra <em>Kami</em></h4>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/04_Infomedia.jpg" alt="">
-                </div>
-                <h4>Infomedia Nusantara</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/06_Aksaramaya.jpg" alt="">
-                </div>
-                <h4>Aksaramaya</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/07_SSH.jpg" alt="">
-                </div>
-                <h4>PT. SUMBERSOLUSINDO Hitech</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/08_TSA.jpg" alt="">
-                </div>
-                <h4>PT. Tricatha Sempiternal Asia</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/09_UNSIA.jpg" alt="">
-                </div>
-                <h4>Universitas Siber Asia</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/10_TIP.jpg" alt="">
-                  <h4>T.I.P</h4>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/11_SAC.jpg" alt="">
-                </div>
-                <h4>SAC Nusantara</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="services pt-5" id="clients">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h4>Client <em>Kami</em></h4>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/01_Mabes-Polri.jpg" alt="">
-                </div>
-                <h4>Mabes Polri</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/02_Div-TIK-Polri.jpg" alt="">
-                </div>
-                <h4>TIK Polri</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/03_Telkom.jpg" alt="">
-                </div>
-                <h4>PT. Telkom Indonesia</h4>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/img-tej/Logo_Partner/05_MDMedia.jpg" alt="">
-                </div>
-                <h4>PT. Metra Digital Media</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h4>Testimonial</h4>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-            <div class="item">
-              <p>“Dalam pengembangan aplikasi, PT. Techno Executor Jaya selalu memperhatikan detail dari setiap desainnya.”</p>
-                <h4>Devina Winanda</h4>
-                <span>Pengguna/Klien</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Setiap teknisi jaringan di PT. Techno Executor Jaya selalu tangkas, sigap dan cermat dalam melakukan pemeliharaan dan perawatan. Saya tidak perlu menunggu lama!”</p>
-                <h4>Aston Wibowo</h4>
-                <span>Pengguna/Klien</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Saya selalu diterima dengan baik dan ramah oleh setiap konsultan IT di PT. Techno Executor Jaya.”</p>
-                <h4>Rebecca Tulung</h4>
-                <span>Wiraswasta</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="contact-us" id="contact-section contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div id="map">
-          
-            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1402.247904701111!2d107.04446076171801!3d-6.243160814148408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5ee3b4faa2e8ef7!2sTechno%20Executor%20Jaya!5e0!3m2!1sen!2sid!4v1650300579870!5m2!1sen!2sid" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
-            <div class="row">
-              <div class="col-lg-4 offset-lg-1">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Office</h4>
-                  <span>(+62) 821 1989 8972</span>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Mobile</h4>
-                  <span>(+62) 819 0912 1997</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h4>Kontak <em>Kami</em></h4>
-                  <p>Ruko Usaha Baru No. 11K<br>
-                    Jl. Bumi Sani Permai, RT01/RW11<br>
-                    Kec. Setiamekar, Kel. Tambun Selatan<br>
-                    Kab. Bekasi, Jawa Barat 17510</p>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit">Kirim</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-12">
-          <p class="copyright">Copyright © 2022 PT. Techno Executor Jaya., Ltd. All rights reserved. 
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
-
-        var showSection = function showSection(section, isAnimate) {
-          var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
-
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
-
-        };
-
-        var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
+          <script>
+            function bigImg(x) {
+              document.getElementById(x).style.display="flex";
             }
-          });
-        };
-
-        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
-          e.preventDefault();
-          showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function () {
-          checkSection();
-        });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items:1,
-          loop:true,
-          nav:true,
-          dots:true,
-          autoplay:true,
-          autoplaySpeed:1000,
-          smartSpeed:1500,
-          autoplayHoverPause:true
-        });
-      });
-    </script>
-</body>
-
-</html>
+            
+            function normalImg(x) {
+              document.getElementById(x).style.display="none";
+            }
+          </script>
+        </section>
+        <!-- Header End 2 -->
+        <!-- Carousel -->
+        <section class="rounded-b border-gray-400">
+          <div class="row ">
+            <div class="large-12 columns">
+              <div class="owl-carousel owl-theme header">
+                <div class="item bg-black">
+                  <img src="carousel1.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img src="carousel2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Carousel End -->
+        <section class="rounded-b mt-5">
+          <div class="row">
+            <div class="flex justify-between full">
+              <div class="w-1/5 flex justify-center">
+                <img src="assets/index/kebutuhankantor.png" alt="">
+              </div>
+              <div class="w-4/5">
+                <div class="owl-carousel owl-theme katalog">
+                  <div class="item flex flex-col">
+                    <img src="assets/index/kebutuhan1.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                  <div class="item flex flex-col">
+                    <img src="assets/index/kebutuhan2.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                  <div class="item flex flex-col">
+                    <img src="assets/index/kebutuhan3.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex p-2 mt-5 bg-zinc-100 rounded">
+            <div class="w-1/5 flex justify-around">
+              <a href="">#newproduk</a>
+              <a href="">#bestSeller</a>
+              <a href="">#mostViewed</a>
+            </div>
+            <div class="w-4/5 flex justify-center">
+              <p class="px-3">Ventilasi Udara</p>
+              <p class="px-3">Toilet</p>
+              <p class="px-3">Kamar Mandi</p>
+              <p class="px-3">Bahan Interior</p>
+              <p class="px-3">Cat Semprot</p>
+            </div>
+          </div>
+        </section>
+        <!-- --------- -->
+        <section class="rounded-b mt-20">
+          <div class="row">
+            <div class="flex justify-between full">
+              <div class="w-1/5 flex justify-center">
+                <img src="assets/index/acpipa.png" alt="">
+              </div>
+              <div class="w-4/5">
+                <div class="owl-carousel owl-theme katalog">
+                  <div class="item flex flex-col">
+                    <img src="assets/index/ac1.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                  <div class="item flex flex-col">
+                    <img src="assets/index/ac2.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                  <div class="item flex flex-col">
+                    <img src="assets/index/ac3.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex p-2 mt-5 bg-zinc-100 rounded">
+            <div class="w-1/5 flex justify-around">
+              <a href="">#newproduk</a>
+              <a href="">#bestSeller</a>
+              <a href="">#mostViewed</a>
+            </div>
+            <div class="w-4/5 flex justify-center">
+              <p class="px-3">Ventilasi Udara</p>
+              <p class="px-3">Toilet</p>
+              <p class="px-3">Kamar Mandi</p>
+              <p class="px-3">Bahan Interior</p>
+              <p class="px-3">Cat Semprot</p>
+            </div>
+          </div>
+        </section>
+        <section class="rounded-b mt-20">
+          <div class="row">
+            <div class="flex justify-between full">
+              <div class="w-1/5 flex justify-center">
+                <img src="assets/index/acpipa.png" alt="">
+              </div>
+              <div class="w-4/5">
+                <div class="owl-carousel owl-theme katalog">
+                  <div class="item flex flex-col">
+                    <img src="assets/index/ac1.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                  <div class="item flex flex-col">
+                    <img src="assets/index/ac2.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                  <div class="item flex flex-col">
+                    <img src="assets/index/ac3.png" style="width: 120px;" alt="">
+                    <p class="mt-1">Onda Seal Tape (Seltip)</p>
+                    <p class="mt-1">Mulai Rp6.000</p>
+                    <div class="flex mt-2">
+                      <p class="bg-green-300 rounded px-2">Ready Stock</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex p-2 mt-5 bg-zinc-100 rounded">
+            <div class="w-1/5 flex justify-around">
+              <a href="">#newproduk</a>
+              <a href="">#bestSeller</a>
+              <a href="">#mostViewed</a>
+            </div>
+            <div class="w-4/5 flex justify-center">
+              <p class="px-3">Ventilasi Udara</p>
+              <p class="px-3">Toilet</p>
+              <p class="px-3">Kamar Mandi</p>
+              <p class="px-3">Bahan Interior</p>
+              <p class="px-3">Cat Semprot</p>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('slider', () => ({
+        currentIndex: 1,
+        images: [
+        'https://source.unsplash.com/1600x900/?beach',
+        'https://source.unsplash.com/1600x900/?cat',
+        'https://source.unsplash.com/1600x900/?dog',
+        'https://source.unsplash.com/1600x900/?lego',
+        'https://source.unsplash.com/1600x900/?textures&patterns'
+        ],
+        back() {
+          if (this.currentIndex > 1) {
+            this.currentIndex = this.currentIndex - 1;
+          }
+        },
+        next() {
+          if (this.currentIndex < this.images.length) {
+            this.currentIndex = this.currentIndex + 1;
+          } else if (this.currentIndex <= this.images.length) {
+            this.currentIndex = this.images.length - this.currentIndex + 1
+          }
+        },
+      }))
+    })
+  </script>
+  <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.header').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            // nav: true
+          }
+        }
+      })
+    })
+    $(document).ready(function() {
+      $('.katalog').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 5,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+  </html>
