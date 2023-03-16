@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @vite('resources/css/app.css') -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  
+  <!-- javascript -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="owlcarousel/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    body{
+      font-family: 'Roboto', sans-serif;
+      color: #272343;
+      background-color: #fffffe;
+    }
+    .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      /* display: inline-block; */
+    }
+    
+    .dropdown-content {
+      display: none;
+      right: 0;
+      top: 0;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+</head>
+
+<body>
+  
+  <div class="flex justify-center">
+    <div class="p-1 container">
+      <!-- Header 1 --> 
+      <section class="flex justify-between items-center py-4">
+        <a href="">
+          <img src="https://www.monotaro.id/media/logo/stores/1/Logo-MID-header.png" title="Logo MID header"
+          alt="Logo MID header" width="200">
+        </a>
+        <div class="flex justify-center">
+          <div class="xl:w-96">
+            <div class="input-group relative flex items-stretch w-full border-yellow-500 border-2 rounded rounded-full px-3 rounded">
+              <input type="search" class="form-control relative flex-auto min-w-0 block w-full py-1.5 text-base font-normal  text-gray-700 bg-white bg-clip-padding rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              placeholder="Ketik Merek / Nama / Tipe Produk" aria-label="Search" aria-describedby="button-addon2">
+              <span class="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded" id="basic-addon2">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>  
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex"><img src="assets/index/icon_review.png" class="mr-2 w-7" alt="">Review <br> Reminder</a>
+        </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex"><img src="assets/index/icon-wishlist-re.png" class="mr-2 w-7" alt="">Pending <br> Quotation</a>
+        </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex items-center"><img src="assets/index/icon_shopping_cart_grey.svg" class="mr-2 w-7" alt="">Keranjang <br> Belanja</a>
+        </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500 items-center text-xs">
+          <a href="login.html" class="flex items-center"><img src="assets/index/icon-wishlist-re.png" class="mr-2 w-7" alt="">Wishlist</a>
+        </div>
+        <div class="flex font-semibold border-b-2 border-white pb-1 hover:border-yellow-500">
+          <img src="assets/index/btn-whatsapp.png" alt="">
+          <a href="login.html" class="text-xs">Order via WA <br> 085717507944</a>
+        </div>
+      </section>
+      <!-- Header End 1 -->
+      <!-- Header 2 -->
+      <section>
+        <div class="flex justify-between border-2 border-t border-l border-r border-yellow-500 rounded-t-md">
+          <div class="w-2/3 relative text-sm">
+            <button onmouseover="bigImg(this.value)" value="tes" onmouseout="normalImg(this.value)" class="w-full h-full font-semibold py-1 hover:bg-yellow-300">Semua Kategori</button>
+            <div id="tes" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full flex z-10 absolute hidden" style="background-color: #fffffe">
+              <!-- <div class="w-full flex z-10 absolute"> -->
+                <div class="w-1/4 flex flex-col border-t border-b border-r border-gray-400 text-xs">
+                  <button onmouseover="bigImg(this.value)" value="bagian1" onmouseout="normalImg(this.value)" class="font-medium text-left w-full px-4 py-1 hover:bg-yellow-300">Kebutuhan Kantor</button>
+                  <button onmouseover="bigImg(this.value)" value="bagian2" onmouseout="normalImg(this.value)" class="font-medium text-left w-full px-4 py-1 hover:bg-yellow-300">Alat Kebutuhan & Kebersihan</button>
+                  <button onmouseover="bigImg(this.value)" value="bagian3" onmouseout="normalImg(this.value)" class="font-medium text-left w-full px-4 py-1 hover:bg-yellow-300">Alat AC & Pipa</button>
+                </div>
+                <div class="w-3/4 flex relative border-r border-b border-t border-gray-400" style="height: 30vh;">
+                  <div id="bagian1" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full hidden h-full absolute px-5 flex">
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Produk Kantor</h4>
+                      <a href="#" class="hover:text-yellow-600">Kertas HVS</a>
+                      <a href="#" class="hover:text-yellow-600">Label</a>
+                      <a href="#" class="hover:text-yellow-600">Berkas</a>
+                      <a href="#" class="hover:text-yellow-600">Notes, Produk Kertas</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Alat Tulis</h4>
+                      <a href="#" class="hover:text-yellow-600">Pensil</a>
+                      <a href="#" class="hover:text-yellow-600">Rautan</a>
+                      <a href="#" class="hover:text-yellow-600">Penghapus</a>
+                      <a href="#" class="hover:text-yellow-600">Pensil Mekanik</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                  </div>
+                  <div id="bagian2" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full hidden h-full absolute px-5 flex">
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Alat Kebersihan</h4>
+                      <a href="#" class="hover:text-yellow-600">Sapu</a>
+                      <a href="#" class="hover:text-yellow-600">Set Sapu</a>
+                      <a href="#" class="hover:text-yellow-600">Pengki</a>
+                      <a href="#" class="hover:text-yellow-600">Sikat Rumah</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Deterjen</h4>
+                      <a href="#" class="hover:text-yellow-600">Sabun Mandi</a>
+                      <a href="#" class="hover:text-yellow-600">Deterjen Pabrik</a>
+                      <a href="#" class="hover:text-yellow-600">Pembersih Kaca</a>
+                      <a href="#" class="hover:text-yellow-600">Detergen Perumahan</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                  </div>
+                  <div id="bagian3" onmouseover="bigImg(this.id)" onmouseout="normalImg(this.id)" class="w-full hidden h-full absolute px-5 flex">
+                    <div class="text-xs w-full p-2 flex flex-col">
+                      <h4  class="border-b-2 pb-1 font-medium mb-1">Penyejuk Udara, Ventilasi</h4>
+                      <a href="#" class="hover:text-yellow-600">Komponen AC</a>
+                      <a href="#" class="hover:text-yellow-600">Unit AC Industri</a>
+                      <a href="#" class="hover:text-yellow-600">Exhaust Fan</a>
+                      <a href="#" class="hover:text-yellow-600">PRoduk Terkait AC</a>
+                      <a href="#" class="hover:text-yellow-600">Lihat Semuanya >></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-1/3 text-center items-center text-sm">
+              <div class="w-full">
+                <a class="border-l-2 border-yellow-400 font-semibold w-full block text-center hover:text-yellow-600" href="">Semua Brand</a>
+              </div>
+              <div class="w-full">
+                <a class="border-l-2 border-yellow-400 font-semibold w-full block text-center hover:text-yellow-600" href="">Semua Promo</a>
+              </div>
+              <div class="w-full bg-yellow-400 flex items-center h-full">
+                <a class="border-l-2 border-yellow-400 font-semibold w-full block text-center" href="">Login</a>
+              </div>
+              <div class="w-full bg-yellow-400 flex items-center h-full">
+                <a class="border-l-2 border-yellow-400 font-semibold w-full block text-center" href="">Daftar</a>
+              </div>
+            </div>
+          </div>
+          <script>
+            function bigImg(x) {
+              document.getElementById(x).style.display="flex";
+            }
+            
+            function normalImg(x) {
+              document.getElementById(x).style.display="none";
+            }
+          </script>
+        </section>
+        <!-- Header End 2 -->
+
+        <section>
+          <div>
+            <div class="flex mb-1 py-2 text-xs border-b border-yellow-500">
+              <a href="index.html" class="hover:border-b hover:border-yellow-500">Home</a>
+              <a class="px-3">></a>
+              <a href="index.html" class="hover:border-b hover:border-yellow-500">Kebutuhan Kantor</a>
+              <a class="px-3">></a>
+              <a href="index.html" class="hover:border-b hover:border-yellow-500">Produk Kantor</a>
+              <a class="px-3">></a>
+              <a href="produk.html" class="text-yellow-500">Kertas HVS</a>
+            </div>
+          </div>
+          <div class="flex pt-5 ">
+            <div class="w-1/5 px-2 border-r-2 border-gray-300">
+              <h3 class="text-md mb-2 font-bold">Filter Merk</h3>
+              <div class="h-80 overflow-auto flex flex-col">
+                <a class="hover:text-yellow-500" href="">Bantex (1) </a>
+                <a class="hover:text-yellow-500" href="">Bola Dunia (9) </a>
+                <a class="hover:text-yellow-500" href="">Butterfly (3) </a>
+                <a class="hover:text-yellow-500" href="">Carla Craft (1) </a>
+                <a class="hover:text-yellow-500" href="">Copier (2) </a>
+                <a class="hover:text-yellow-500" href="">Copy Paper Blue (4) </a>
+                <a class="hover:text-yellow-500" href="">Deli (5)</a>
+                <a class="hover:text-yellow-500" href="">Natural by Chalmer (2) </a>
+                <a class="hover:text-yellow-500" href="">Neuro (7) </a>
+                <a class="hover:text-yellow-500" href="">Non Brand (1) </a>
+                <a class="hover:text-yellow-500" href="">Paper Prins (1) </a>
+                <a class="hover:text-yellow-500" href="">Paperline (5) </a>
+                <a class="hover:text-yellow-500" href="">PaperOne 1(3) </a>
+                <a class="hover:text-yellow-500" href="">PP Lite (3) </a>
+                <a class="hover:text-yellow-500" href="">Primaform 1(5) </a>
+                <a class="hover:text-yellow-500" href="">Printech 1(6) </a>
+                <a class="hover:text-yellow-500" href="">Sinar Dunia 1(2) </a>
+                <a class="hover:text-yellow-500" href="">SJ Premium (1) </a>
+                <a class="hover:text-yellow-500" href="">SLIONTEC (1) </a>
+                <a class="hover:text-yellow-500" href="">Tiara (2)</a>
+                <a class="hover:text-yellow-500" href="">Paperline (5) </a>
+                <a class="hover:text-yellow-500" href="">PaperOne 1(3) </a>
+                <a class="hover:text-yellow-500" href="">PP Lite (3) </a>
+                <a class="hover:text-yellow-500" href="">Primaform 1(5) </a>
+                <a class="hover:text-yellow-500" href="">Printech 1(6) </a>
+                <a class="hover:text-yellow-500" href="">Sinar Dunia 1(2) </a>
+                <a class="hover:text-yellow-500" href="">SJ Premium (1) </a>
+                <a class="hover:text-yellow-500" href="">SLIONTEC (1) </a>
+                <a class="hover:text-yellow-500" href="">Tiara (2)</a>
+                <a class="hover:text-yellow-500" href="">Paperline (5) </a>
+                <a class="hover:text-yellow-500" href="">PaperOne 1(3) </a>
+                <a class="hover:text-yellow-500" href="">PP Lite (3) </a>
+                <a class="hover:text-yellow-500" href="">Primaform 1(5) </a>
+                <a class="hover:text-yellow-500" href="">Printech 1(6) </a>
+                <a class="hover:text-yellow-500" href="">Sinar Dunia 1(2) </a>
+                <a class="hover:text-yellow-500" href="">SJ Premium (1) </a>
+                <a class="hover:text-yellow-500" href="">SLIONTEC (1) </a>
+                <a class="hover:text-yellow-500" href="">Tiara (2)</a>
+              </div>
+            </div>
+            <div class="w-4/5 px-7 pt-4">
+              <h3 class="text-xl font-bold border-b-2 border-gray-300 pb-1 mb-5">Kertas HVS</h3>
+              <div class="flex flex-wrap">
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk1.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 36.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk2.png" alt="">
+                    </div>
+                    <p>Sinar Dunia Copy Paper A4 75g (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 26.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk2.png" alt="">
+                    </div>
+                    <p>Sinar Dunia Copy Paper A4 75g (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 46.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk1.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 12.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 17.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 17.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk1.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 34.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk3.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 32.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk1.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk1.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk4.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="checkout.html" class="text-sm w-1/5 p-2 mb-2 ">
+                  <div class="hover:shadow-2xl p-2 rounded">
+                    <div class="flex justify-center">
+                      <img src="assets/produk/produk1.png" alt="">
+                    </div>
+                    <p>PaperOne Kertas HVS A4 (Kertas Fotokopi)</p>
+                    <p>Mulai <span>Rp 16.000</span> </p>
+                    <div class="flex">
+                      <p class="px-2 rounded bg-green-600 text-white mr-2">Ready Stock</p>
+                      <p class="px-1 rounded border border-gray-300">Terjual > 5</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('slider', () => ({
+        currentIndex: 1,
+        images: [
+        'https://source.unsplash.com/1600x900/?beach',
+        'https://source.unsplash.com/1600x900/?cat',
+        'https://source.unsplash.com/1600x900/?dog',
+        'https://source.unsplash.com/1600x900/?lego',
+        'https://source.unsplash.com/1600x900/?textures&patterns'
+        ],
+        back() {
+          if (this.currentIndex > 1) {
+            this.currentIndex = this.currentIndex - 1;
+          }
+        },
+        next() {
+          if (this.currentIndex < this.images.length) {
+            this.currentIndex = this.currentIndex + 1;
+          } else if (this.currentIndex <= this.images.length) {
+            this.currentIndex = this.images.length - this.currentIndex + 1
+          }
+        },
+      }))
+    })
+  </script>
+  <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.header').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            // nav: true
+          }
+        }
+      })
+    })
+    $(document).ready(function() {
+      $('.katalog').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 5,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+  </html>
